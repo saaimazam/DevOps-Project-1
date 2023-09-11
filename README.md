@@ -68,3 +68,32 @@ sudo apt install docker.io
 - Jenkins -> Manage Jenkins -> System -> Publish Over SSH -> SSH Servers -> Add -> Give Name -> Hostname : -> Username : dockeradmin -> advanced -> enable password based authentication -> password : <password of dockeradmin -> test configuration -> Apply -> Save
 - Successfully instegrated docker with jenkins.
 - Now goto docker server
+
+# 4. Create and run docker file
+- Goto the directory where application code is clone.
+- Create a docker file
+```bash
+vim Dockerfile
+```
+- Write code in the docker file
+```bash
+FROM node:12.2.0-alpine
+WORKDIR app
+COPY . .
+RUN npm install
+EXPOSE 8000
+CMD ["node","app.js"]
+```
+
+- Now, build the file.
+```bash
+docker build . -t node-app
+```
+- Grant user permissions.
+```bash
+sudo usermod -a -G docker $USER
+```
+- After that, run docker image as a container.
+```bash
+docker run -d --name node-todo-app -p 8000:8000 todo-node-app
+```
