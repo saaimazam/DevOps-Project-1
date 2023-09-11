@@ -52,3 +52,19 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 - Build Now in Jenkins
 
 ![Screenshot 2023-09-08 142849](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/a02690bc-91ef-472c-afe4-cb9be6681f43)
+
+# 3. Connect to terminal and install docker :-
+
+```bash
+sudo apt-get update
+```
+- Install docker
+```bash
+sudo apt install docker.io
+```
+- Lets Integrate Docker with Jenkins
+- Jenkins -> Manage Jenkins -> Plugins -> Available -> Search for Publish Over SSH -> Install
+- Lets configure Docker in Jenkins
+- Jenkins -> Manage Jenkins -> System -> Publish Over SSH -> SSH Servers -> Add -> Give Name -> Hostname : -> Username : dockeradmin -> advanced -> enable password based authentication -> password : <password of dockeradmin -> test configuration -> Apply -> Save
+- Successfully instegrated docker with jenkins.
+- Now goto docker server
