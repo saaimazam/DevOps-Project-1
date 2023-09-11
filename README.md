@@ -98,7 +98,7 @@ sudo usermod -a -G docker $USER
 docker run -d --name node-todo-app -p 8000:8000 todo-node-app
 ```
 
-# Run app with Jenkins
+# 5. Run app with Jenkins
 - Goto Jenkins Job > Free style project > Add git repository > Build steps > Execute shell
 
 - In the execute shell right these commands 
