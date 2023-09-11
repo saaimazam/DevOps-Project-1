@@ -14,6 +14,7 @@ sudo apt update
 
 - Java installation :-
 sudo apt install openjdk-11-jre
+```bash
 java -version
 
 - Package Installation for Jenkins :-
