@@ -97,3 +97,20 @@ sudo usermod -a -G docker $USER
 ```bash
 docker run -d --name node-todo-app -p 8000:8000 todo-node-app
 ```
+
+# Run app with Jenkins
+- Goto Jenkins Job > Free style project > Add git repository > Build steps > Execute shell
+
+- In the execute shell right these commands 
+```bash
+FROM node:12.2.0-alpine
+WORKDIR app
+COPY . .
+RUN npm install
+EXPOSE 8000
+CMD ["node","app.js"]
+```
+
+- Apply & Save
+
+# App will run Successfully. 
