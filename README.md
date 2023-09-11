@@ -9,23 +9,26 @@ Jenkins-Server : AWS Ubuntu, t2.micro
 ![Screenshot 2023-09-08 142943](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/fe454880-e9d2-4792-933f-b8b5e9b0025d)
 
 # 1. Install and Configure Java & Jenkins :-
-
-sudo apt update
-
-- Java installation :-
-sudo apt install openjdk-11-jre
 ```bash
+sudo apt update
+```
+- Java installation :-
+```bash
+sudo apt install openjdk-11-jre
 java -version
+```
 
 - Package Installation for Jenkins :-
+```bash
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \   /usr/share/keyrings/jenkins-keyring.asc > /dev/null 
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \   https://pkg.jenkins.io/debian binary/ | sudo tee \   /etc/apt/sources.list.d/jenkins.list > /dev/null
-
+```
 - Install, Enable and Start Jenkins :-
+```bash
 sudo apt-get update 
 sudo apt-get install jenkins
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
-
+```
 
