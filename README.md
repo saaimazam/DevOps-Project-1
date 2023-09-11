@@ -44,5 +44,11 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 - Jenkins-> New Item-> Freestyle Project-> Source Code Management-> Git
 ![image](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/8f290ed2-a0bb-4d94-a60b-6b3dbea0de06)
 
+
 - Connect github to jenkins through webhook
+
 ![image](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/504d78c0-7637-4b40-900a-b14615bb8a95)
+
+- Build Now in Jenkins
+
+![Screenshot 2023-09-08 142849](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/a02690bc-91ef-472c-afe4-cb9be6681f43)
