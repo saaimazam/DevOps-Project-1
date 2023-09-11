@@ -38,3 +38,11 @@ sudo systemctl status jenkins
 ```bash
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+- Now copy & paste this passwd in jenkins. so, jenkins is ready.
+
+# 2. Run the code in jenkins:
+- Jenkins-> New Item-> Freestyle Project-> Source Code Management-> Git
+![image](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/8f290ed2-a0bb-4d94-a60b-6b3dbea0de06)
+
+- Connect github to jenkins through webhook
+![image](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/504d78c0-7637-4b40-900a-b14615bb8a95)
