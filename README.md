@@ -31,4 +31,10 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
+- Copy public ip of jenkins server and paste it in new tab with port no.8080
+![Screenshot 2023-09-11 122125](https://github.com/saaimazam/DevOps-Project-1/assets/125339535/166f51e3-426b-4ca9-9840-19b65e3c3be5)
 
+- copy this path and paste in terminal with "cat" command
+```bash
+cat /var/lib/jenkins/secrets/initialAdminPassword
+```
